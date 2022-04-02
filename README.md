@@ -19,11 +19,11 @@ https://raw.githubusercontent.com/Jeremiah-81/password-generator/main/passwordge
 repository.
 
 *This is a link to check the functionally and display of the page password-generator.html
+
 ## Usage
 *Open it in a web browser and follow the prompts to create a password.
 
 *I used it to generate passwords with any desired number of characters for the user.
 
-![An empty text box with a generate password button](assets/images/screenshot.png)
 ## Credit 
 *https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
