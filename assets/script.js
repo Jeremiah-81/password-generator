@@ -74,7 +74,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-var passcode = createpassword();
+var password = createpassword();
 var inputText = document.querySelector("#password");
     inputText.value = global;
 

@@ -11,6 +11,9 @@
 
 * I learned building this that I can choose any number of charactors to apply to a password.
 
+##  screenshot
+https://raw.githubusercontent.com/Jeremiah-81/password-generator/main/passwordgenerator.png
+
 ## Installation
 *To download from github click on the green (code) button on the right of your screen and choose the zip file on the menu. This will contain everything inside the
 repository.
