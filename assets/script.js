@@ -11,14 +11,14 @@ var specialCharacters = ["!","@","#","$","%","^","&","*","(",")","_","-","=","+"
 var numbers = ["0","1","2","3","4","5","6","7","8","9",];
 
 function createpassword(){
-   var passworstrength = prompt("Choose length of password.")
+   var passwordstrength = prompt("Choose length of password.")
    var capLetter = confirm("Include UpperCase Characters");
    var lowercaseletter = confirm("Include LowerCase Characters");
    var specialsymbol = confirm("Include Special Characters");
    var randomNumber = confirm("Include Numbers");
 
   var keycodechoice = {
-    passworstrength: passworstrength,                    
+    passwordstrength: passwordstrength,                    
       capLetter: capLetter,
       lowercaseletter: lowercaseletter,
       specialsymbol: specialsymbol,
@@ -34,7 +34,7 @@ function createpassword(){
   if(keycodechoice.capLetter) {
     outcome.push(selectionRandomChar(upperCase));
     charactersneeded = charactersneeded.concat(upperCase);     
-   //console.log(charactersneeded);              
+    console.log(charactersneeded);              
   }
   if(keycodechoice.lowercaseletter) {
     outcome.push(selectionRandomChar(lowerCase));
@@ -49,18 +49,18 @@ function createpassword(){
     charactersneeded = charactersneeded.concat(numbers);               
   }
 
-   //console.log(outcome);
-   var currentpassworstrength = outcome.length;       
+   console.log(outcome);
+   var currentpasswordstrength = outcome.length;       
 
 
-  for (var i = 0; i < keycodechoice.passworstrength -  currentpassworstrength; i++) {      
+  for (var i = 0; i < keycodechoice.passwordstrength -  currentpasswordstrength; i++) {      
      var randomChar = selectionRandomChar(charactersneeded);              
       outcome.push(randomChar);
   } 
   console.log(outcome);
   outcome.map(function(str){
-       global +=str
-       console.log(typeof str)
+  global +=str
+  //console.log(outcome)
   })
 
 }
@@ -74,9 +74,10 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-var password = createpassword();
-var inputText = document.querySelector("#password");
-    inputText.value = global;
+  var password = createpassword();
+  var inputText = document.querySelector("#password");
+  
+inputText.value =global;
 
 
 
